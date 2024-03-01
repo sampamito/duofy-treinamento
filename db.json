@@ -1,0 +1,19 @@
+{
+    "pessoas": [
+        {
+            "nome": "João",
+            "idade": 20,
+            "cidade": "São Paulo"
+        },
+        {
+            "nome": "Maria",
+            "idade": 25,
+            "cidade": "Goiania"
+        },
+        {
+            "nome": "José",
+            "idade": 30,
+            "cidade": "Rio de Janeiro"
+        }
+    ]
+}

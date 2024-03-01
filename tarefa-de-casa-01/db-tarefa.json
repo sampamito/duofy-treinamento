@@ -1,0 +1,104 @@
+{
+  "categorias": [
+    {
+      "categoria": "Urnas",
+      "id": "d73a"
+    },
+    {
+      "categoria": "Ornamentacao",
+      "id": "9bb6"
+    },
+    {
+      "categoria": "Cerimonial",
+      "id": "c64a"
+    },
+    {
+      "categoria": "Servicos Funerarios",
+      "id": "8350"
+    },
+    {
+      "categoria": "Coroas de Flores",
+      "id": "3a70"
+    }
+  ],
+  "produtos": [
+    {
+      "categoria": "Urnas",
+      "produto": "Urnas de Madeira",
+      "preco": 1000,
+      "id": "f928"
+    },
+    {
+      "categoria": "Urnas",
+      "produto": "Urnas de Metal",
+      "preco": 2000,
+      "id": "8fe7"
+    },
+    {
+      "categoria": "Urnas",
+      "produto": "Urnas de Vidro",
+      "preco": 3000,
+      "id": "a84a"
+    },
+    {
+      "categoria": "Ornamentacao",
+      "produto": "Arranjos de Flores",
+      "preco": 500,
+      "id": "748e"
+    },
+    {
+      "categoria": "Coroas de Flores",
+      "produto": "Coroas de Flores",
+      "preco": 1000,
+      "id": "0587"
+    },
+    {
+      "categoria": "Ornamentacao",
+      "produto": "Velas",
+      "preco": 200,
+      "id": "5f61"
+    },
+    {
+      "categoria": "Cerimonial",
+      "produto": "Cerimonial",
+      "preco": 1000,
+      "id": "9252"
+    },
+    {
+      "categoria": "Servicos Funerarios",
+      "produto": "Servicos Funerarios",
+      "preco": 1000,
+      "id": "140f"
+    },
+    {
+      "categoria": "Servicos Funerarios",
+      "produto": "Tanatopraxia",
+      "preco": 1000,
+      "id": "0661"
+    },
+    {
+      "categoria": "Servicos Funerarios",
+      "produto": "Remocao 100 km",
+      "preco": 1000,
+      "id": "4fa4"
+    },
+    {
+      "categoria": "Servicos Funerarios",
+      "produto": "Remocao 200 km",
+      "preco": 1000,
+      "id": "66fb"
+    },
+    {
+      "produto": "Urna Teste",
+      "preco": 1000,
+      "id": "0a23",
+      "categoria": "Urnas"
+    },
+    {
+      "id": "58ab",
+      "categoria": "Urnas",
+      "produto": "teste",
+      "preco": 10
+    }
+  ]
+}
