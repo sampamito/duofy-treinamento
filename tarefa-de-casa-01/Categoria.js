@@ -3,7 +3,7 @@ export async function buscaCateorgia() {
     const response = await fetch('http://localhost:3000/categorias');
     const categorias = await response.json();
     return categorias;
-  }
+}
 
 // Função para verificar se a categoria existe
 export async function categoriaExiste(categoria) {
@@ -12,6 +12,53 @@ export async function categoriaExiste(categoria) {
 
     // Verifica se a categoria existe no array de categorias
     return categorias.some(cat => cat.categoria === categoria);
+}
+
+// Função para verificar se a categoria existe pelo ID
+async function categoriaExistePorId(id) {
+    const response = await fetch(`http://localhost:3000/categorias/${id}`);
+    return response.status === 200; // Retorna true se a categoria existe (status 200 OK)
+}
+
+// Função para incluir uma nova categoria
+export async function incluirCategoria(nomeCategoria) {
+    // Verifica se a categoria já existe
+    if (await categoriaExiste(nomeCategoria)) {
+        throw new Error('Categoria já existe');
+    }
+
+    // Se a categoria não existir, inclui a nova categoria
+    const response = await fetch('http://localhost:3000/categorias', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ categoria: nomeCategoria }),
+    });
+    const data = await response.json();
+    return data;
+}
+
+// Função para excluir uma categoria
+export async function excluirCategoria(id) {
+    const response = await fetch(`http://localhost:3000/categorias/${id}`, {
+        method: 'DELETE'
+    });
+    const data = await response.json();
+    return data;
+}
+
+// Função para atualizar uma categoria
+export async function atualizarCategoria(id, novaCategoria) {
+    const response = await fetch(`http://localhost:3000/categorias/${id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ categoria: novaCategoria }),
+    });
+    const data = await response.json();
+    return data;
 }
 
 // Função para calcular o preço médio por categoria
