@@ -14,7 +14,7 @@ export async function categoriaExiste(categoria) {
     return categorias.some(cat => cat.categoria === categoria);
 }
 
-// Função para verificar se a categoria existe pelo ID
+// Função para veri2ficar se a categoria existe pelo ID
 async function categoriaExistePorId(id) {
     const response = await fetch(`http://localhost:3000/categorias/${id}`);
     return response.status === 200; // Retorna true se a categoria existe (status 200 OK)
