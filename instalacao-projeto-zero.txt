@@ -1,0 +1,20 @@
+>> Criação de um projeto do zero:
+- typescript
+
+1. iniciar o diretorio:
+- npm init -y
+
+a. cria o package.json
+b. relacionar os pacotes do projeto e executar os scripts
+
+2. instalar o pacote de desenvolvimento do typescript e javascript
+- npm install --save-dev typescript
+
+3. pode apagar o node modules
+
+4. executar o npm para instalar os pacotes necessarios
+- npm install
+
+5. instalar o jest
+- npm install --save-dev jest
+
